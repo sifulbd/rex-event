@@ -159,11 +159,12 @@
     |================
     */   
      $('#mh-client-review').owlCarousel({
-        loop: true,
+        loop: false,
         responsiveClass: true,
         nav: true,
         autoplay: true,
         smartSpeed: 450,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
         margin: 10,
         stopOnHover : true,
         animateIn: 'slideInRight',

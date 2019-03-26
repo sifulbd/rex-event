@@ -294,7 +294,7 @@ a {
     outline: 0;
     padding: 10px 34px;
     font-weight: bold;
-    border-radius: 4px;
+    border-radius: 30px;
     font-size: 14px;
     box-shadow: 0 15px 63px 0 rgba(64,38,138,0.75);
     line-height: 22px;
@@ -381,20 +381,21 @@ a {
         }
     }
 
-    &.btn-border {
+    &.btn-stroke{
         background-color: transparent;
-        // border-color: fade($light-color, 100%);
+        border-color: rgba($white, 100%);
 
         &:hover {
-            // background-color: darken($main-color-1, 5%);
+            background-color: rgba($main-color, 100%);
         }
     }
     &.white-btn-border {
         background-color: transparent;
         border-color: $white;
-
+        color: $white;
         &:hover {
-            // background-color: darken($main-color-1, 5%);
+            background-color: $white;
+            color: $form-text;
         }
     }
 

@@ -230,8 +230,26 @@ body {
     float: none;
   }
   .name .custom {
-    border-right: 1px solid #D0D0CF;
+    // border-right: 1px solid #D0D0CF;
     display: inline-block;
+    &:last-child {
+        &:after {
+            display: none;
+        }
+    }
+
+    &:after {
+        content: ':';
+        display: inline-block;
+        color: $main-color-light;
+        font-size: 50px;
+        position: absolute;
+        z-index: 9999;
+        right: 0;
+        top: 20%;
+        bottom: 0;
+        margin: 0;
+    }
   }
   .name .custom:last-child {
     border-right: 0px solid #D0D0CF;
@@ -270,6 +288,60 @@ body {
           }
       }
   }
+
+.ev-events {
+    .owl-carousel .owl-stage-outer {
+        overflow: visible;
+    }
+    .owl-controls {
+        width: 142px;
+        position: absolute;
+        right: 0;
+        top: -150px;
+    }
+    .owl-next {
+        position: absolute;
+        background: #fff;
+        border-radius: 50%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border: 0px solid red;
+        border-color: #83d7ac;
+        top: 40%;
+        height: 70px;
+        box-shadow: 15px 10px 54px rgba(51, 51, 51, 0.10);
+        width: 70px;
+        right: 0%;
+        text-align: center;
+    }
+    .owl-next .fa {
+        color: #2A2A2A;
+        line-height: 70px;
+        font-size: 40px;
+        margin-left: 0px;
+    }
+    .owl-prev {
+        position: absolute;
+        background: #fff;
+        border-radius: 50%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border: 0px solid red;
+        text-align: center;
+        border-color: rgba(255, 255, 255, 0.44);
+        top: 40%;
+        left: 0%;
+        height: 70px;
+        box-shadow: 15px 10px 54px rgba(51, 51, 51, 0.10);
+        width: 70px;
+    }
+    .owl-prev .fa {
+        line-height: 70px;
+        color: #2A2A2A;
+        font-size: 40px;
+        margin-left: 0px;
+    }
+}
 
 /*
     ==============
@@ -384,6 +456,16 @@ body {
 
 .prev-item {
     position: relative;
+    transition: transform .3s cubic-bezier(.68,-.55,.265,1.55);
+    @include transition(.5s);
+    &:hover {
+        transform: translateY(-20px);
+        @include transition(.5s);
+        .each-img-content {
+            background-image: linear-gradient(-135deg, rgba(255,255,255,0.28) 0%, rgba(14,5,41,0.74) 100%);
+            @include transition(.5s);
+        }
+    }
     .each-img-content {
         position: absolute;
         left: 0;
@@ -392,6 +474,7 @@ body {
         color: $white;
         padding: 20px;
         bottom: 0;
+        @include transition(.5s);
         background-image: linear-gradient(-164deg, rgba(255,255,255,0.00) 0%, rgba(14,5,41,0.60) 92%);
         h4 {
             position: absolute;
@@ -403,6 +486,98 @@ body {
         }
     }
 }
+
+.ev-our-partner {
+    background-color: #F7F3FF;
+    .pl-logo-title {
+        position: relative;
+        .btn {
+            position: absolute;
+            top: 30px;
+            right: 0;
+            border: 1px solid rgba(89,57,181,0.45);
+            box-shadow: 0 31px 33px -16px rgba(193,186,209,0.40);
+        }
+    }
+    .ev-partners-logo {
+        ul {
+            li {
+                display: inline-block;
+                width: 19%;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                img {
+                    max-height: 70px;
+                }
+            }
+        }
+    }
+}
+
+.ev-pricing {
+    .ev-dot {
+        position: absolute;
+        top: -120px;
+        right: -120px;
+    }
+    .price-item {
+        background-image: linear-gradient(200deg, $main-color-light 0%, $main-color 97%);
+        color: $white;
+        position: relative;
+        img {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .price-content {
+            padding: 50px 25px;
+
+            h4 {
+                text-transform: uppercase;
+            }
+            p {
+                margin-top: 20px;
+                margin-bottom: 50px;
+            }
+            .btn {
+
+            }
+        }
+        .ev-price-list {
+            background-color: $form-text;
+            height: 100%;
+            padding: 50px 30px;
+            text-align: center;
+            li {
+                border-bottom: 1px solid rgba($white, 0.25);
+                padding: 8px 0;
+                &:first-child {
+                    font-size: 30px;
+                    line-height: 42px;
+                }
+                &:last-child {
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+.ev-footer-reg {
+    .single-form {
+        margin: 100px 0;
+        padding: 80px 30px;
+        select {
+            height: 48px;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+        .btn {
+            margin-top: 30px;
+        }
+    }
+}
+ 
 .ev-services {
     .ev-service-item {
         text-align: center;
@@ -941,137 +1116,6 @@ body {
 
 }
 
-
-.ev-pricing {
-    .ev-pricing-table {
-        background: #FFFFFF;
-        box-shadow: 1px 1px 75px 0 rgba(112, 112, 112, 0.11);
-        border-radius: 7px;
-        text-align: center;
-        padding: 60px 26px;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-        &.purple-table {
-            ul {
-                li {
-                    .check {
-                        &:after {
-                                border-color: #643BDF;
-                        }
-                    }
-                }
-            }
-        }
-        &.blue-table {
-            .ev-pricing-name {
-                color: $blue-color;
-            }
-            .btn {
-                background-color: $blue-color;
-            }
-            ul {
-                li {
-                    .check {
-                        &:after {
-                            border-color: $blue-color;
-                        }
-                    }
-                }
-            }
-        }
-        &.skyblu-table {
-            .ev-pricing-name {
-                color: $sblue-color;
-            }
-            .btn {
-                background-color: $sblue-color;
-            }
-            ul {
-                li {
-                    .check {
-                        &:after {
-                                border-color: $main-color;
-                        }
-                    }
-                }
-            }
-        }
-        .ev-pricing-name {
-            font-size: 35px;
-            color: #643BDF;
-            letter-spacing: 0;
-            font-weight: bold;
-        }
-        p {
-            opacity: 0.4;
-            font-size: 18px;
-            color: #182D38;
-            letter-spacing: 0;
-            text-align: center;
-            line-height: 26px;
-            padding: 30px;
-        }
-        strong {
-            font-size: 50px;
-            color: #182D38;
-            letter-spacing: -0.82px;
-            text-align: center;
-            span {
-                font-size: 18px;
-                color: #000000;
-                letter-spacing: -0.82px;
-                text-align: center;
-                line-height: 40px;
-                display: block;
-                opacity: 0.4;
-            }
-        }
-        .btn {
-            margin: 20px 0;
-            box-shadow: none;
-            text-transform: uppercase;
-        }
-        ul {
-            padding: 30px 0;
-            li {
-                position: relative;
-                padding-left: 36px;
-                font-size: 16px;
-                text-align: left;
-                color: #182D38;
-                letter-spacing: 0;
-                margin: 6px 0;
-                span {
-                    opacity: 0.4;
-                }
-                .check {
-                    width: 24px;
-                    height: 18px;
-                    cursor: pointer;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    &:after {
-                        content: '';
-                        width: 17px;
-                        height: 8px;
-                        position: absolute;
-                        top: 6px;
-                        left: 4px;
-                        border: 2px solid #333;
-                        border-top: none;
-                        border-right: none;
-                        background: transparent;
-                        opacity: 1;
-                        -webkit-transform: rotate(-45deg);
-                        transform: rotate(-45deg);
-                    }
-                }
-            }
-        }
-    }
-}
-
 .ev-feature-service {
     .ev-f-service-item {
         text-align: left;
@@ -1235,28 +1279,70 @@ body {
 
 
 .ev-footer {
+    background-image: linear-gradient(60deg, $main-color 0%, darken($main-color-light, 8%) 100%);
+    color: $white;
+    position: relative;
+    .ev-ft-shape {
+        position: absolute;
+        left: 0;
+        bottom: 30px;
+    }
     .footer-inner {
         margin-bottom: 30px;
         h4 {
             // font-family: GoogleSans-Bold;
             font-size: 16px;
-            color: #182D38;
+            color: #fff;
+            margin-top: 20px;
             letter-spacing: 0.5px;
             line-height: 10px;
             margin-bottom: 30px;
+        }
+        p {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding-right: 30px;
         }
         ul {
             li {
                 margin: 10px 0;
                 a {
-                    opacity: 0.7;
+                    opacity: 0.9;
                     // font-family: GoogleSans-Medium;
-                    font-size: 18px;
-                    color: #5B5B5B;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #fff;
                     letter-spacing: 0;
                     text-transform: capitalize;
                     &:hover {
-                        color: $main-color;
+                        // color: $main-color;
+                    }
+                }
+            }
+        }
+        .social-icon {
+            li {
+                background: transparent;
+                margin: 0 6px;
+                &:hover {
+                    background: transparent;
+                    a {
+                        .fa {
+                            border-color: $white;
+                        }
+                    }
+                }
+                a {
+                    width: 0;
+                    height: 0;
+                    padding: 0;
+                    .fa {
+                        border: 0px solid #fff;
+                        height: 40px;
+                        width: 40px;
+                        line-height: 40px;
+                        background: rgba(255,255,255,0.10);
+                        border-radius: 50%;
                     }
                 }
             }
@@ -1286,31 +1372,7 @@ body {
             }
         }
     }
-    .social-icon {
-        li {
-            background: transparent;
-            &:hover {
-                background: transparent;
-                a {
-                    .fa {
-                        color: $main-color;
-                    }
-                }
-            }
-            a {
-                width: 0;
-                height: 0;
-                padding: 0;
-                .fa {
-                    border: 1px solid $white;
-                    height: 30px;
-                    width: 30px;
-                    line-height: 30px;
-                    border-radius: 50%;
-                }
-            }
-        }
-    }
+
 }
 /*
     ==============
