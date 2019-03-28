@@ -65,6 +65,31 @@
           scrollSpeed: 750,
           scrollThreshold: 0.5,
       });
+
+
+        /***********************************************************/
+        /* COUNT DOWN                                              */
+        /***********************************************************/  
+             
+        $('.name').countdown({
+          end_time: "2019/05/21 14:27:28 +0600",
+          wrapper: function(unit){
+              var wrpr = $('<div></div>').
+                  addClass(unit.toLowerCase()+'_wrapper').
+                  addClass('col-sm-3').
+                  addClass('col-xs-3').
+                  addClass('col-md-3').
+                  addClass('custom');
+              var background = $('<div></div>').
+                  addClass('background').
+                  addClass('time').
+                  appendTo(wrpr);
+
+              $('<span class="counter style_all"></span>').appendTo(background);
+              $('<span class="title">'+unit+'</span>').appendTo(background);
+              return wrpr;
+          }
+      });
     
     /*
     |=================
@@ -162,7 +187,7 @@
         loop: false,
         responsiveClass: true,
         nav: true,
-        autoplay: true,
+        autoplay: false,
         smartSpeed: 450,
         navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
         margin: 10,
