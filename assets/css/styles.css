@@ -1140,6 +1140,26 @@ body {
   line-height: 24px;
 }
 
+.ev-home-5 .h5img {
+  margin-bottom: 30px;
+}
+
+.ev-home-5 .ev-event-start-time {
+  position: absolute;
+  margin: 0px 15px;
+  height: 200px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #6D40e3;
+}
+
+.ev-home-5 .ev-event-start-time h2 {
+  color: #fff;
+  line-height: 200px;
+  text-align: center;
+}
+
 .ev-home-padding {
   padding: 180px 0;
 }
