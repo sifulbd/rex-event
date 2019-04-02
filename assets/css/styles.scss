@@ -52,7 +52,7 @@ body {
     &.nav-strict {
         padding: 0;
         @include transition(.3s);
-        z-index: 999;
+        z-index: 9999;
         // background-color: $white;
         position: fixed;
         left: 0;

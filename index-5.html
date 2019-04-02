@@ -58,14 +58,14 @@
                                     <a class="nav-link " href="#ev-schedule">Schedule</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#ev-speakers">Speakers</a>
+                                    <a class="nav-link" href="#ev-events">Speakers</a>
                                 </li>                              
-                                <li class="nav-item">
-                                   <a class="nav-link" href="#ev-registration">Registration</a>
-                                </li>                           
                                 <li class="nav-item"> 
                                     <a class="nav-link" href="#ev-pricing">Pricing</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#ev-registation">Registration</a>
+                                </li>                           
                             </ul>
                         </div>
                     </nav>
@@ -130,8 +130,7 @@
             </ul>
         </div>
 
-
-        <section class="ev-about ev-about-2 ev-about-gallery  relative">
+        <section class="ev-about ev-about-2 ev-about-gallery relative" id="ev-about">
             <div class="ev-ab-3-overlay image-bg" style="background-image: url(assets/images/ev-about3-ov.png);"></div>
             <div class="container">
                 <div class="row section-separator ">
@@ -180,52 +179,199 @@
             SCHEDULE 
         =================== 
         -->
-        <section class="ev-schedule image-bg relative">
-                <div class="ev-wave"><img src="assets/images/wave.png" alt=""></div>
-                <div class="overlay-img image-bg" style="background-image: url(assets/images/overlay-shape.png);">
-                    <div class="container">
-                        <div class="row section-separator">
-                            <div class="col-sm-12 ev-section-title ev-sc-title">
-                                <span class="section-tagline">schedule details</span>
-                                <h2>Event Schedule</h2>
-                            </div>    
-                            <div class="col-sm-12 wow fadeInUp">
-                                <div class="row">
-                                    <div class="col-lg-3">
-                                        <!-- Schedule date -->
-                                        <div class="nav flex-column nav-pills ev-about-nav ev-sc-date-nav" id="v-pillsa-tab" role="tablist" aria-orientation="vertical">
-                                            <a class="nav-link active" id="v-pillsa-home-tab" data-toggle="pill" href="#v-pillsa-homes" role="tab" aria-controls="v-pillsa-home-tab" aria-selected="true">
-                                                <h4>18 March</h4>
-                                                <span>monday</span>
-                                            </a>
-                                            <a class="nav-link" id="v-pillsa-profile-tab" data-toggle="pill" href="#v-pillsa-profiles" role="tab" aria-controls="v-pillsa-profile-tab" aria-selected="false">
-                                                <h4>19 March</h4>
-                                                <span>Tueday</span>
-                                            </a>
-                                            <a class="nav-link" id="v-pillsa-profile-tab2" data-toggle="pill" href="#v-pillsa-profilesz" role="tab" aria-controls="v-pillsa-profile-tab2" aria-selected="false">
-                                                <h4>20 March</h4>
-                                                <span>wednesday</span>
-                                            </a>
-                                        </div>
+        <section class="ev-schedule image-bg relative" id="ev-schedule">
+            <div class="ev-wave"><img src="assets/images/wave.png" alt=""></div>
+            <div class="overlay-img image-bg" style="background-image: url(assets/images/overlay-shape.png);">
+                <div class="container">
+                    <div class="row section-separator">
+                        <div class="col-sm-12 ev-section-title ev-sc-title">
+                            <span class="section-tagline">schedule details</span>
+                            <h2>Event Schedule</h2>
+                        </div>    
+                        <div class="col-sm-12 wow fadeInUp">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <!-- Schedule date -->
+                                    <div class="nav flex-column nav-pills ev-about-nav ev-sc-date-nav" id="v-pillsa-tab" role="tablist" aria-orientation="vertical">
+                                        <a class="nav-link active" id="v-pillsa-home-tab" data-toggle="pill" href="#v-pillsa-homes" role="tab" aria-controls="v-pillsa-home-tab" aria-selected="true">
+                                            <h4>18 March</h4>
+                                            <span>monday</span>
+                                        </a>
+                                        <a class="nav-link" id="v-pillsa-profile-tab" data-toggle="pill" href="#v-pillsa-profiles" role="tab" aria-controls="v-pillsa-profile-tab" aria-selected="false">
+                                            <h4>19 March</h4>
+                                            <span>Tueday</span>
+                                        </a>
+                                        <a class="nav-link" id="v-pillsa-profile-tab2" data-toggle="pill" href="#v-pillsa-profilesz" role="tab" aria-controls="v-pillsa-profile-tab2" aria-selected="false">
+                                            <h4>20 March</h4>
+                                            <span>wednesday</span>
+                                        </a>
                                     </div>
-                                    <div class="col-lg-9">
-                                        <div class="tab-content ev-tab-content" id="v-pillsa-tabContent">
-                                            <!-- 
-                                                First day
-                                             -->
-                                            <div class="tab-pane fade show active" id="v-pillsa-homes" role="tabpanel" aria-labelledby="v-pillsa-home-tab">
-                                                <div class="row">
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="tab-content ev-tab-content" id="v-pillsa-tabContent">
+                                        <!-- 
+                                            First day
+                                            -->
+                                        <div class="tab-pane fade show active" id="v-pillsa-homes" role="tabpanel" aria-labelledby="v-pillsa-home-tab">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="nav flex-column nav-pills ev-time-nav" id="v-pills-tabb" role="tablist" aria-orientation="vertical">
+                                                        <a class="nav-link active" id="v-pills-homea-tab" data-toggle="pill" href="#fsc1" role="tab" aria-controls="v-pills-homea-tab" aria-selected="true">9:30 - 10.30 AM</a>
+                                                        <a class="nav-link" id="v-pills-homeb-tab" data-toggle="pill" href="#fsc2" role="tab" aria-controls="v-pills-homeb-tab" aria-selected="true">11:30 - 12.30 AM</a>
+                                                        <a class="nav-link" id="v-pills-homec-tab" data-toggle="pill" href="#fsc3" role="tab" aria-controls="v-pills-homec-tab" aria-selected="true">03:30 - 04.30 AM</a>
+                                                        <a class="nav-link" id="v-pills-homed-tab" data-toggle="pill" href="#fsc4" role="tab" aria-controls="v-pills-homed-tab" aria-selected="true">05:30 - 06.30 AM</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="tab-content ev-tab-content" id="v-pills-tabbContent">
+                                                        <div class="tab-pane fade show active" id="fsc1" role="tabpanel" aria-labelledby="v-pills-homea-tab">
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <h3> “ Characteristics Of A Successful advertisement ” </h3>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <div class="spk-img">
+                                                                        <img src="assets/images/spk.png" alt="" class="img-fluid"> 
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <div class="spk-info">
+                                                                        <div class="spk-title">
+                                                                            <h4>Matthew Allen</h4>
+                                                                            <span>Designer @Luova Studio</span>
+                                                                        </div>
+                                                                        <div class="spk-social">
+                                                                            <ul class="social-icon">
+                                                                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                                                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                                                                <li><a href=""><i class="fa fa-github"></i></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p>
+                                                                        Across North America during their careers and built a reputation from business owners and trusted advisors 
+                                                                        for their ethics and balanced approach to completing a transaction.  Must go faster. My dad once told me, 
+                                                                        laugh and the world laughs with you, 
+                                                                    </p>   
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="fsc2" role="tabpanel" aria-labelledby="v-pills-homeb-tab">
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <h3> “Development Of A Successful advertisement ” </h3>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <div class="spk-img">
+                                                                        <img src="assets/images/spk.png" alt="" class="img-fluid"> 
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <div class="spk-info">
+                                                                        <div class="spk-title">
+                                                                            <h4>Matthew Allen</h4>
+                                                                            <span>Designer @Luova Studio</span>
+                                                                        </div>
+                                                                        <div class="spk-social">
+                                                                            <ul class="social-icon">
+                                                                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                                                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                                                                <li><a href=""><i class="fa fa-github"></i></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p>
+                                                                        Across North America during their careers and built a reputation from business owners and trusted advisors 
+                                                                        for their ethics and balanced approach to completing a transaction.  Must go faster. My dad once told me, 
+                                                                        laugh and the world laughs with you, 
+                                                                    </p>   
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="fsc3" role="tabpanel" aria-labelledby="v-pills-homec-tab">
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <h3> “ Web Of A Successful advertisement ” </h3>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <div class="spk-img">
+                                                                        <img src="assets/images/spk.png" alt="" class="img-fluid"> 
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <div class="spk-info">
+                                                                        <div class="spk-title">
+                                                                            <h4>Matthew Allen</h4>
+                                                                            <span>Designer @Luova Studio</span>
+                                                                        </div>
+                                                                        <div class="spk-social">
+                                                                            <ul class="social-icon">
+                                                                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                                                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                                                                <li><a href=""><i class="fa fa-github"></i></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p>
+                                                                        Across North America during their careers and built a reputation from business owners and trusted advisors 
+                                                                        for their ethics and balanced approach to completing a transaction.  Must go faster. My dad once told me, 
+                                                                        laugh and the world laughs with you, 
+                                                                    </p>   
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="fsc4" role="tabpanel" aria-labelledby="v-pills-homed-tab">
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <h3> “ Market Of A Successful advertisement ” </h3>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <div class="spk-img">
+                                                                        <img src="assets/images/spk.png" alt="" class="img-fluid"> 
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <div class="spk-info">
+                                                                        <div class="spk-title">
+                                                                            <h4>Matthew Allen</h4>
+                                                                            <span>Designer @Luova Studio</span>
+                                                                        </div>
+                                                                        <div class="spk-social">
+                                                                            <ul class="social-icon">
+                                                                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                                                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                                                                <li><a href=""><i class="fa fa-github"></i></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p>
+                                                                        Across North America during their careers and built a reputation from business owners and trusted advisors 
+                                                                        for their ethics and balanced approach to completing a transaction.  Must go faster. My dad once told me, 
+                                                                        laugh and the world laughs with you, 
+                                                                    </p>   
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 
+                                            Second day
+                                            -->
+                                        <div class="tab-pane fade" id="v-pillsa-profiles" role="tabpanel" aria-labelledby="v-pillsa-profile-tab">
+                                            <div class="row">
                                                     <div class="col-sm-12">
-                                                        <div class="nav flex-column nav-pills ev-time-nav" id="v-pills-tabb" role="tablist" aria-orientation="vertical">
-                                                            <a class="nav-link active" id="v-pills-homea-tab" data-toggle="pill" href="#fsc1" role="tab" aria-controls="v-pills-homea-tab" aria-selected="true">9:30 - 10.30 AM</a>
-                                                            <a class="nav-link" id="v-pills-homeb-tab" data-toggle="pill" href="#fsc2" role="tab" aria-controls="v-pills-homeb-tab" aria-selected="true">11:30 - 12.30 AM</a>
-                                                            <a class="nav-link" id="v-pills-homec-tab" data-toggle="pill" href="#fsc3" role="tab" aria-controls="v-pills-homec-tab" aria-selected="true">03:30 - 04.30 AM</a>
-                                                            <a class="nav-link" id="v-pills-homed-tab" data-toggle="pill" href="#fsc4" role="tab" aria-controls="v-pills-homed-tab" aria-selected="true">05:30 - 06.30 AM</a>
+                                                        <div class="nav flex-column nav-pills ev-time-nav" id="v-pills-tabc" role="tablist" aria-orientation="vertical">
+                                                            <a class="nav-link active" id="v-pills-homep-tab" data-toggle="pill" href="#fsca1" role="tab" aria-controls="v-pills-homep-tab" aria-selected="true">9:30 - 10.30 AM</a>
+                                                            <a class="nav-link" id="v-pillsq-home-tab" data-toggle="pill" href="#fsca2" role="tab" aria-controls="v-pillsq-home-tab" aria-selected="true">11:30 - 12.30 AM</a>
+                                                            <a class="nav-link" id="v-pillsr-home-tab" data-toggle="pill" href="#fsca3" role="tab" aria-controls="v-pillsr-home-tab" aria-selected="true">03:30 - 04.30 AM</a>
+                                                            <a class="nav-link" id="v-pillss-home-tab" data-toggle="pill" href="#fsca4" role="tab" aria-controls="v-pillss-home-tab" aria-selected="true">05:30 - 06.30 AM</a>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-12">
-                                                        <div class="tab-content ev-tab-content" id="v-pills-tabbContent">
-                                                            <div class="tab-pane fade show active" id="fsc1" role="tabpanel" aria-labelledby="v-pills-homea-tab">
+                                                        <div class="tab-content ev-tab-content" id="v-pills-tabcContent">
+                                                            <div class="tab-pane fade show active" id="fsca1" role="tabpanel" aria-labelledby="v-pills-homep-tab">
                                                                 <div class="row">
                                                                     <div class="col-sm-12">
                                                                         <h3> “ Characteristics Of A Successful advertisement ” </h3>
@@ -257,7 +403,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="tab-pane fade" id="fsc2" role="tabpanel" aria-labelledby="v-pills-homeb-tab">
+                                                            <div class="tab-pane fade" id="fsca2" role="tabpanel" aria-labelledby="v-pillsq-home-tab">
                                                                 <div class="row">
                                                                     <div class="col-sm-12">
                                                                         <h3> “Development Of A Successful advertisement ” </h3>
@@ -289,7 +435,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="tab-pane fade" id="fsc3" role="tabpanel" aria-labelledby="v-pills-homec-tab">
+                                                            <div class="tab-pane fade" id="fsca3" role="tabpanel" aria-labelledby="v-pillsr-home-tab">
                                                                 <div class="row">
                                                                     <div class="col-sm-12">
                                                                         <h3> “ Web Of A Successful advertisement ” </h3>
@@ -321,7 +467,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="tab-pane fade" id="fsc4" role="tabpanel" aria-labelledby="v-pills-homed-tab">
+                                                            <div class="tab-pane fade" id="fsca4" role="tabpanel" aria-labelledby="v-pillss-home-tab">
                                                                 <div class="row">
                                                                     <div class="col-sm-12">
                                                                         <h3> “ Market Of A Successful advertisement ” </h3>
@@ -355,296 +501,148 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
                                             </div>
-                                            <!-- 
-                                                Second day
-                                             -->
-                                            <div class="tab-pane fade" id="v-pillsa-profiles" role="tabpanel" aria-labelledby="v-pillsa-profile-tab">
-                                                <div class="row">
-                                                        <div class="col-sm-12">
-                                                            <div class="nav flex-column nav-pills ev-time-nav" id="v-pills-tabc" role="tablist" aria-orientation="vertical">
-                                                                <a class="nav-link active" id="v-pills-homep-tab" data-toggle="pill" href="#fsca1" role="tab" aria-controls="v-pills-homep-tab" aria-selected="true">9:30 - 10.30 AM</a>
-                                                                <a class="nav-link" id="v-pillsq-home-tab" data-toggle="pill" href="#fsca2" role="tab" aria-controls="v-pillsq-home-tab" aria-selected="true">11:30 - 12.30 AM</a>
-                                                                <a class="nav-link" id="v-pillsr-home-tab" data-toggle="pill" href="#fsca3" role="tab" aria-controls="v-pillsr-home-tab" aria-selected="true">03:30 - 04.30 AM</a>
-                                                                <a class="nav-link" id="v-pillss-home-tab" data-toggle="pill" href="#fsca4" role="tab" aria-controls="v-pillss-home-tab" aria-selected="true">05:30 - 06.30 AM</a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-12">
-                                                            <div class="tab-content ev-tab-content" id="v-pills-tabcContent">
-                                                                <div class="tab-pane fade show active" id="fsca1" role="tabpanel" aria-labelledby="v-pills-homep-tab">
-                                                                    <div class="row">
-                                                                        <div class="col-sm-12">
-                                                                            <h3> “ Characteristics Of A Successful advertisement ” </h3>
-                                                                        </div>
-                                                                        <div class="col-lg-4">
-                                                                            <div class="spk-img">
-                                                                                <img src="assets/images/spk.png" alt="" class="img-fluid"> 
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-lg-8">
-                                                                            <div class="spk-info">
-                                                                                <div class="spk-title">
-                                                                                    <h4>Matthew Allen</h4>
-                                                                                    <span>Designer @Luova Studio</span>
-                                                                                </div>
-                                                                                <div class="spk-social">
-                                                                                    <ul class="social-icon">
-                                                                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                                                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                                                                        <li><a href=""><i class="fa fa-github"></i></a></li>
-                                                                                    </ul>
-                                                                                </div>
-                                                                            </div>
-                                                                            <p>
-                                                                                Across North America during their careers and built a reputation from business owners and trusted advisors 
-                                                                                for their ethics and balanced approach to completing a transaction.  Must go faster. My dad once told me, 
-                                                                                laugh and the world laughs with you, 
-                                                                            </p>   
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="tab-pane fade" id="fsca2" role="tabpanel" aria-labelledby="v-pillsq-home-tab">
-                                                                    <div class="row">
-                                                                        <div class="col-sm-12">
-                                                                            <h3> “Development Of A Successful advertisement ” </h3>
-                                                                        </div>
-                                                                        <div class="col-lg-4">
-                                                                            <div class="spk-img">
-                                                                                <img src="assets/images/spk.png" alt="" class="img-fluid"> 
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-lg-8">
-                                                                            <div class="spk-info">
-                                                                                <div class="spk-title">
-                                                                                    <h4>Matthew Allen</h4>
-                                                                                    <span>Designer @Luova Studio</span>
-                                                                                </div>
-                                                                                <div class="spk-social">
-                                                                                    <ul class="social-icon">
-                                                                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                                                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                                                                        <li><a href=""><i class="fa fa-github"></i></a></li>
-                                                                                    </ul>
-                                                                                </div>
-                                                                            </div>
-                                                                            <p>
-                                                                                Across North America during their careers and built a reputation from business owners and trusted advisors 
-                                                                                for their ethics and balanced approach to completing a transaction.  Must go faster. My dad once told me, 
-                                                                                laugh and the world laughs with you, 
-                                                                            </p>   
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="tab-pane fade" id="fsca3" role="tabpanel" aria-labelledby="v-pillsr-home-tab">
-                                                                    <div class="row">
-                                                                        <div class="col-sm-12">
-                                                                            <h3> “ Web Of A Successful advertisement ” </h3>
-                                                                        </div>
-                                                                        <div class="col-lg-4">
-                                                                            <div class="spk-img">
-                                                                                <img src="assets/images/spk.png" alt="" class="img-fluid"> 
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-lg-8">
-                                                                            <div class="spk-info">
-                                                                                <div class="spk-title">
-                                                                                    <h4>Matthew Allen</h4>
-                                                                                    <span>Designer @Luova Studio</span>
-                                                                                </div>
-                                                                                <div class="spk-social">
-                                                                                    <ul class="social-icon">
-                                                                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                                                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                                                                        <li><a href=""><i class="fa fa-github"></i></a></li>
-                                                                                    </ul>
-                                                                                </div>
-                                                                            </div>
-                                                                            <p>
-                                                                                Across North America during their careers and built a reputation from business owners and trusted advisors 
-                                                                                for their ethics and balanced approach to completing a transaction.  Must go faster. My dad once told me, 
-                                                                                laugh and the world laughs with you, 
-                                                                            </p>   
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="tab-pane fade" id="fsca4" role="tabpanel" aria-labelledby="v-pillss-home-tab">
-                                                                    <div class="row">
-                                                                        <div class="col-sm-12">
-                                                                            <h3> “ Market Of A Successful advertisement ” </h3>
-                                                                        </div>
-                                                                        <div class="col-lg-4">
-                                                                            <div class="spk-img">
-                                                                                <img src="assets/images/spk.png" alt="" class="img-fluid"> 
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-lg-8">
-                                                                            <div class="spk-info">
-                                                                                <div class="spk-title">
-                                                                                    <h4>Matthew Allen</h4>
-                                                                                    <span>Designer @Luova Studio</span>
-                                                                                </div>
-                                                                                <div class="spk-social">
-                                                                                    <ul class="social-icon">
-                                                                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                                                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                                                                        <li><a href=""><i class="fa fa-github"></i></a></li>
-                                                                                    </ul>
-                                                                                </div>
-                                                                            </div>
-                                                                            <p>
-                                                                                Across North America during their careers and built a reputation from business owners and trusted advisors 
-                                                                                for their ethics and balanced approach to completing a transaction.  Must go faster. My dad once told me, 
-                                                                                laugh and the world laughs with you, 
-                                                                            </p>   
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                            </div>
-                                            <!-- 
-                                                Third day
-                                             -->
-                                            <div class="tab-pane fade" id="v-pillsa-profiles2" role="tabpanel" aria-labelledby="v-pillsa-profile-tab2">
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <div class="nav flex-column nav-pills ev-time-nav" id="v-pills-tabd" role="tablist" aria-orientation="vertical">
-                                                            <a class="nav-link active" id="v-pills-homel-tab" data-toggle="pill" href="#fszca1" role="tab" aria-controls="v-pills-homel-tab" aria-selected="true">9:30 - 10.30 AM</a>
-                                                            <a class="nav-link" id="v-pills-homem-tab" data-toggle="pill" href="#fszca2" role="tab" aria-controls="v-pills-homem-tab" aria-selected="true">11:30 - 12.30 AM</a>
-                                                            <a class="nav-link" id="v-pills-homen-tab" data-toggle="pill" href="#fszca3" role="tab" aria-controls="v-pills-homen-tab" aria-selected="true">03:30 - 04.30 AM</a>
-                                                            <a class="nav-link" id="v-pills-homeo-tab" data-toggle="pill" href="#fszca4" role="tab" aria-controls="v-pills-homeo-tab" aria-selected="true">05:30 - 06.30 AM</a>
-                                                        </div>
+                                        </div>
+                                        <!-- 
+                                            Third day
+                                            -->
+                                        <div class="tab-pane fade" id="v-pillsa-profiles2" role="tabpanel" aria-labelledby="v-pillsa-profile-tab2">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="nav flex-column nav-pills ev-time-nav" id="v-pills-tabd" role="tablist" aria-orientation="vertical">
+                                                        <a class="nav-link active" id="v-pills-homel-tab" data-toggle="pill" href="#fszca1" role="tab" aria-controls="v-pills-homel-tab" aria-selected="true">9:30 - 10.30 AM</a>
+                                                        <a class="nav-link" id="v-pills-homem-tab" data-toggle="pill" href="#fszca2" role="tab" aria-controls="v-pills-homem-tab" aria-selected="true">11:30 - 12.30 AM</a>
+                                                        <a class="nav-link" id="v-pills-homen-tab" data-toggle="pill" href="#fszca3" role="tab" aria-controls="v-pills-homen-tab" aria-selected="true">03:30 - 04.30 AM</a>
+                                                        <a class="nav-link" id="v-pills-homeo-tab" data-toggle="pill" href="#fszca4" role="tab" aria-controls="v-pills-homeo-tab" aria-selected="true">05:30 - 06.30 AM</a>
                                                     </div>
-                                                    <div class="col-sm-12">
-                                                        <div class="tab-content ev-tab-content" id="v-pills-tabdContent">
-                                                            <div class="tab-pane fade show active" id="fszca1" role="tabpanel" aria-labelledby="v-pills-homel-tab">
-                                                                <div class="row">
-                                                                    <div class="col-sm-12">
-                                                                        <h3> “ Nature Of A Successful advertisement ” </h3>
-                                                                    </div>
-                                                                    <div class="col-lg-4">
-                                                                        <div class="spk-img">
-                                                                            <img src="assets/images/spk.png" alt="" class="img-fluid"> 
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-8">
-                                                                        <div class="spk-info">
-                                                                            <div class="spk-title">
-                                                                                <h4>Matthew Allen</h4>
-                                                                                <span>Designer @Luova Studio</span>
-                                                                            </div>
-                                                                            <div class="spk-social">
-                                                                                <ul class="social-icon">
-                                                                                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                                                                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                                                                    <li><a href=""><i class="fa fa-github"></i></a></li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                        <p>
-                                                                            Across North America during their careers and built a reputation from business owners and trusted advisors 
-                                                                            for their ethics and balanced approach to completing a transaction.  Must go faster. My dad once told me, 
-                                                                            laugh and the world laughs with you, 
-                                                                        </p>   
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="tab-content ev-tab-content" id="v-pills-tabdContent">
+                                                        <div class="tab-pane fade show active" id="fszca1" role="tabpanel" aria-labelledby="v-pills-homel-tab">
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <h3> “ Nature Of A Successful advertisement ” </h3>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <div class="spk-img">
+                                                                        <img src="assets/images/spk.png" alt="" class="img-fluid"> 
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="tab-pane fade" id="fszca2" role="tabpanel" aria-labelledby="v-pills-homem-tab">
-                                                                <div class="row">
-                                                                    <div class="col-sm-12">
-                                                                        <h3> “Development Of A Successful advertisement ” </h3>
-                                                                    </div>
-                                                                    <div class="col-lg-4">
-                                                                        <div class="spk-img">
-                                                                            <img src="assets/images/spk.png" alt="" class="img-fluid"> 
+                                                                <div class="col-lg-8">
+                                                                    <div class="spk-info">
+                                                                        <div class="spk-title">
+                                                                            <h4>Matthew Allen</h4>
+                                                                            <span>Designer @Luova Studio</span>
+                                                                        </div>
+                                                                        <div class="spk-social">
+                                                                            <ul class="social-icon">
+                                                                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                                                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                                                                <li><a href=""><i class="fa fa-github"></i></a></li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-lg-8">
-                                                                        <div class="spk-info">
-                                                                            <div class="spk-title">
-                                                                                <h4>Matthew Allen</h4>
-                                                                                <span>Designer @Luova Studio</span>
-                                                                            </div>
-                                                                            <div class="spk-social">
-                                                                                <ul class="social-icon">
-                                                                                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                                                                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                                                                    <li><a href=""><i class="fa fa-github"></i></a></li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                        <p>
-                                                                            Across North America during their careers and built a reputation from business owners and trusted advisors 
-                                                                            for their ethics and balanced approach to completing a transaction.  Must go faster. My dad once told me, 
-                                                                            laugh and the world laughs with you, 
-                                                                        </p>   
-                                                                    </div>
+                                                                    <p>
+                                                                        Across North America during their careers and built a reputation from business owners and trusted advisors 
+                                                                        for their ethics and balanced approach to completing a transaction.  Must go faster. My dad once told me, 
+                                                                        laugh and the world laughs with you, 
+                                                                    </p>   
                                                                 </div>
                                                             </div>
-                                                            <div class="tab-pane fade" id="fszca3" role="tabpanel" aria-labelledby="v-pills-homen-tab">
-                                                                <div class="row">
-                                                                    <div class="col-sm-12">
-                                                                        <h3> “ Web Of A Successful advertisement ” </h3>
-                                                                    </div>
-                                                                    <div class="col-lg-4">
-                                                                        <div class="spk-img">
-                                                                            <img src="assets/images/spk.png" alt="" class="img-fluid"> 
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-8">
-                                                                        <div class="spk-info">
-                                                                            <div class="spk-title">
-                                                                                <h4>Matthew Allen</h4>
-                                                                                <span>Designer @Luova Studio</span>
-                                                                            </div>
-                                                                            <div class="spk-social">
-                                                                                <ul class="social-icon">
-                                                                                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                                                                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                                                                    <li><a href=""><i class="fa fa-github"></i></a></li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                        <p>
-                                                                            Across North America during their careers and built a reputation from business owners and trusted advisors 
-                                                                            for their ethics and balanced approach to completing a transaction.  Must go faster. My dad once told me, 
-                                                                            laugh and the world laughs with you, 
-                                                                        </p>   
+                                                        </div>
+                                                        <div class="tab-pane fade" id="fszca2" role="tabpanel" aria-labelledby="v-pills-homem-tab">
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <h3> “Development Of A Successful advertisement ” </h3>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <div class="spk-img">
+                                                                        <img src="assets/images/spk.png" alt="" class="img-fluid"> 
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-lg-8">
+                                                                    <div class="spk-info">
+                                                                        <div class="spk-title">
+                                                                            <h4>Matthew Allen</h4>
+                                                                            <span>Designer @Luova Studio</span>
+                                                                        </div>
+                                                                        <div class="spk-social">
+                                                                            <ul class="social-icon">
+                                                                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                                                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                                                                <li><a href=""><i class="fa fa-github"></i></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p>
+                                                                        Across North America during their careers and built a reputation from business owners and trusted advisors 
+                                                                        for their ethics and balanced approach to completing a transaction.  Must go faster. My dad once told me, 
+                                                                        laugh and the world laughs with you, 
+                                                                    </p>   
+                                                                </div>
                                                             </div>
-                                                            <div class="tab-pane fade" id="fszca4" role="tabpanel" aria-labelledby="v-pills-homeo-tab">
-                                                                <div class="row">
-                                                                    <div class="col-sm-12">
-                                                                        <h3> “ Market Of A Successful advertisement ” </h3>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="fszca3" role="tabpanel" aria-labelledby="v-pills-homen-tab">
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <h3> “ Web Of A Successful advertisement ” </h3>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <div class="spk-img">
+                                                                        <img src="assets/images/spk.png" alt="" class="img-fluid"> 
                                                                     </div>
-                                                                    <div class="col-lg-4">
-                                                                        <div class="spk-img">
-                                                                            <img src="assets/images/spk.png" alt="" class="img-fluid"> 
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <div class="spk-info">
+                                                                        <div class="spk-title">
+                                                                            <h4>Matthew Allen</h4>
+                                                                            <span>Designer @Luova Studio</span>
+                                                                        </div>
+                                                                        <div class="spk-social">
+                                                                            <ul class="social-icon">
+                                                                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                                                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                                                                <li><a href=""><i class="fa fa-github"></i></a></li>
+                                                                            </ul>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-lg-8">
-                                                                        <div class="spk-info">
-                                                                            <div class="spk-title">
-                                                                                <h4>Matthew Allen</h4>
-                                                                                <span>Designer @Luova Studio</span>
-                                                                            </div>
-                                                                            <div class="spk-social">
-                                                                                <ul class="social-icon">
-                                                                                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                                                                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                                                                    <li><a href=""><i class="fa fa-github"></i></a></li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                        <p>
-                                                                            Across North America during their careers and built a reputation from business owners and trusted advisors 
-                                                                            for their ethics and balanced approach to completing a transaction.  Must go faster. My dad once told me, 
-                                                                            laugh and the world laughs with you, 
-                                                                        </p>   
+                                                                    <p>
+                                                                        Across North America during their careers and built a reputation from business owners and trusted advisors 
+                                                                        for their ethics and balanced approach to completing a transaction.  Must go faster. My dad once told me, 
+                                                                        laugh and the world laughs with you, 
+                                                                    </p>   
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="fszca4" role="tabpanel" aria-labelledby="v-pills-homeo-tab">
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <h3> “ Market Of A Successful advertisement ” </h3>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <div class="spk-img">
+                                                                        <img src="assets/images/spk.png" alt="" class="img-fluid"> 
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <div class="spk-info">
+                                                                        <div class="spk-title">
+                                                                            <h4>Matthew Allen</h4>
+                                                                            <span>Designer @Luova Studio</span>
+                                                                        </div>
+                                                                        <div class="spk-social">
+                                                                            <ul class="social-icon">
+                                                                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                                                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                                                                <li><a href=""><i class="fa fa-github"></i></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p>
+                                                                        Across North America during their careers and built a reputation from business owners and trusted advisors 
+                                                                        for their ethics and balanced approach to completing a transaction.  Must go faster. My dad once told me, 
+                                                                        laugh and the world laughs with you, 
+                                                                    </p>   
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -656,8 +654,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>                
-                </div>
+                    </div>
+                </div>                
+            </div>
         </section>
     
         <!--
@@ -665,7 +664,7 @@
             EVENTS 
         =================== 
         -->
-        <section class="ev-events">
+        <section class="ev-events" id="ev-events">
             <div class="container">
                 <div class="row section-separator">
                     <div class="col-sm-12 ev-section-title title-left">
@@ -713,7 +712,7 @@
             PARTNERS 
         =================== 
         -->
-        <section class="ev-our-partner">
+        <section class="ev-our-partner" id="ev-partner">
             <div class="container">
                 <div class="row section-separator">
                     <div class="col-sm-12 ev-section-title title-left pl-logo-title">
@@ -743,7 +742,7 @@
             PRCING 
         =================== 
         -->
-        <section class="ev-pricing">
+        <section class="ev-pricing" id="ev-pricing">
             <div class="container">
                 <div class="row section-separator pb-0">
                     <div class="col-sm-12 ev-section-title title-left">
@@ -810,8 +809,8 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-10 center ev-footer-reg image-bg" style="background-image: url(assets/images/price-inner-shape.png);">
-                        <div class="single-form">
+                    <div class="col-lg-10 center ev-footer-reg image-bg" style="background-image: url(assets/images/price-inner-shape.png);"> 
+                        <div class="single-form" id="ev-registation">
                             <form id="contactForm" class="quate-form wow fadeInUp col-sm-12" data-toggle="validator">
                                 <div id="msgSubmit" class="h3 text-center hidden"></div>
                                 <div class="row">
@@ -893,7 +892,7 @@
             FOOTER 
         ===================
         -->
-        <footer class="section ev-footer wow fadeInUp" id="zb-contact">
+        <footer class="section ev-footer wow fadeInUp" id="ev-contact">
             <img src="assets/images/footer-shape.png" alt="" class="ev-ft-shape">
             <div class="container">
                 <div class="row relative section-separator">

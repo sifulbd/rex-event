@@ -885,7 +885,7 @@ body {
   padding: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  z-index: 999;
+  z-index: 9999;
   position: fixed;
   left: 0;
   right: 0;
