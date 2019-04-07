@@ -24,6 +24,9 @@
     }
 }
 
+img {
+    border-radius: 6px;
+}
 
 section {
     overflow: hidden;
@@ -38,6 +41,15 @@ body {
 
 .color-overlay {
     background-image: linear-gradient(-212deg, rgba($form-text, 0.4) 0%, rgba($main-color, 0.4) 97%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.white-color-overlay {
+    background-image: linear-gradient(-212deg, rgba($white, 0.4) 0%, rgba($white, 0.4) 97%);
     position: absolute;
     left: 0;
     right: 0;
