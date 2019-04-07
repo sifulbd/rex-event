@@ -550,6 +550,17 @@
     text-align: center;
     margin-bottom: 30px;
   }
+  .ev-home-4 {
+    height: auto;
+  }
+  .ev-home-4 .ev-countdown {
+    float: none;
+    position: relative;
+    border-top-left-radius: 0px;
+  }
+  .ev-home-4 .ev-home-padding {
+    padding-bottom: 30px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -760,6 +771,12 @@
   .ev-schedule .ev-tab-content {
     background-color: #fff;
     padding: 10px;
+  }
+  .ev-pricing .price-item .price-content .btn {
+    display: block;
+  }
+  .ev-pricing .price-item {
+    margin-bottom: 30px;
   }
 }
 
