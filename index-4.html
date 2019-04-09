@@ -31,7 +31,12 @@
         <!-- Custom CSS-->
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
+
         
+        <!-- COLOR CSS -->
+        <link rel="stylesheet" href="assets/css/color-1.css" title="blue"> 
+        <link rel="stylesheet" href="assets/css/color-2.css" title="purple">
+        <link rel="stylesheet" href="assets/css/color-3.css" title="red">        
     </head>
     <body class="black-bg">
         <!--
@@ -84,7 +89,7 @@
             <div class="section-video">
                 <video autoplay="" class="bgvid" loop="" muted>
                     <!-- <source src="video/video.webm" type="video/webm"> -->
-                    <source src="assets/video/event-video.mp4" type="video/mp4">
+                    <source src="https://s3.envato.com/h264-video-previews/4a0f595b-7270-460c-bb4e-65b4bf67a098/20844836.mp4" type="video/mp4">
                     <!-- <source src="video/video.ogv" type="video/ogv"> -->
                 </video>
             </div>
@@ -980,5 +985,45 @@
         <!-- Custom Scripts-->
         <!-- <script src="assets/js/map-init.js"></script> -->
         <script src="assets/js/custom-scripts.js"></script>
+
+
+    <!-- ****************
+      After neccessary customization/modification, Please minify 
+      JavaScript/jQuery according to http://browserdiet.com/en/ for better performance
+    **************** -->
+    <!-- STYLE SWITCH STYLESHEET ONLY FOR DEMO -->
+    <style>
+            .demo-style-switch ul.styles li .purple {
+                background: linear-gradient(60deg, #E67E99 0%, #39007D 100%) !important;
+            }
+            .demo-style-switch ul.styles li .blue {
+                background: linear-gradient(60deg, #009CF8 0%, #15008D 100%) !important;
+            }
+            .demo-style-switch ul.styles li .red {
+                background: linear-gradient(60deg, #8FE1A0 0%, #168572 100%) !important;
+            }
+        </style>
+        <link rel="stylesheet" href="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/demo/demo.css">
+        <script type="text/javascript" src="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/demo/styleswitcher.js"></script>
+        <script type="text/javascript" src="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/demo/demo.js"></script>
+        <div class="demo-style-switch" id="switch-style">
+            <a id="toggle-switcher" class="switch-button"><i class="fa fa-life-ring fa-spin"></i></a>
+            <div class="switched-options">
+                <div class="config-title">
+                    Colors :
+                </div>
+                <ul class="styles">
+                    <li><a href="#" onclick="setActiveStyleSheet('blue'); return false;" title="blue">
+                        <div class="blue"></div></a>
+                    </li>
+                    <li><a href="#" onclick="setActiveStyleSheet('red'); return false;" title="red">
+                        <div class="red"></div></a>
+                    </li>
+                    <li><a href="#" onclick="setActiveStyleSheet('purple'); return false;" title="purple">
+                        <div class="purple"></div></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </body>
-</html>
+    </html>
