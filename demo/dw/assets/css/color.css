@@ -1,0 +1,193 @@
+.btn.btn-stroke:hover {
+  background-color: #2E82E0;
+}
+
+.main-color {
+  color: #2E82E0;
+}
+
+.ev-home-4 .ev-countdown {
+  background: #2E82E0;
+}
+
+.ev-loc-fix li .fa {
+  color: #2E82E0;
+}
+
+.ev-loc-fix li h4 {
+  color: #2E82E0;
+}
+
+.ev-loc-fix li h3 {
+  color: #2E82E0;
+}
+
+.ev-home-5 .ev-event-start-time {
+  background-color: #2E82E0;
+}
+
+.ev-about-gallery .ab-shape-img .back-shape-top {
+  background-color: #2E82E0;
+}
+
+.ev-about-gallery .ab-shape-img-bottom .back-shape-btm {
+  background-color: #2E82E0;
+}
+
+.ev-pricing .price-item:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8FE1A0), to(#168572));
+  background-image: linear-gradient(180deg, #8FE1A0 0%, #168572 100%);
+}
+
+.mh-header-bg {
+  background-image: linear-gradient(60deg, #8FE1A0 0%, #168572 100%);
+}
+
+.ev-schedule {
+  background-image: linear-gradient(60deg, #8FE1A0 0%, #168572 100%);
+}
+
+.ev-footer {
+  background-image: linear-gradient(60deg, #8FE1A0 0%, #168572 100%);
+}
+
+.portfolio-nav ul li:hover {
+  color: #2E82E0;
+}
+
+.portfolio-nav ul li.active {
+  color: #2E82E0;
+}
+
+.ev-team-item .team-member-content h6 {
+  color: #2E82E0;
+}
+
+.ev-blog-content .ev-blg-btn a:hover {
+  color: #2E82E0;
+}
+
+.ev-schedule .ev-tab-content .spk-info .spk-social .social-icon li:hover a .fa {
+  background-color: #2E82E0;
+}
+
+.ev-schedule .ev-tab-content .spk-info .spk-social .social-icon li a .fa {
+  color: #2E82E0;
+}
+
+.ev-schedule .ev-time-nav .nav-link.active {
+  border-bottom: 2px solid #2E82E0;
+  color: #2E82E0;
+}
+
+.ev-footer-bottom a:hover {
+  color: #2E82E0;
+}
+
+.ev-footer-bottom .footer-links a:hover {
+  color: #2E82E0;
+}
+
+.mh-testimonial .mh-client-item img {
+  border: 0px solid #2E82E0;
+}
+
+.mh-testimonial .mh-client-item p::after {
+  color: #2E82E0;
+}
+
+.mh-testimonial .owl-controls .owl-dots .owl-dot {
+  border: 1px solid #2E82E0;
+}
+
+.mh-testimonial .owl-controls .owl-dots .owl-dot.active {
+  background-color: #2E82E0;
+}
+
+.mh-footer-address .mh-address-footer-item .each-icon .fa {
+  border-color: #2E82E0;
+}
+
+.zb-address address a:hover {
+  color: #2E82E0;
+}
+
+.uv-accordinaton-list:hover {
+  color: #2E82E0;
+}
+
+.uv-right-arrow.color {
+  border: 1px solid #2E82E0;
+  background: #2E82E0;
+}
+
+.ev-loc-fix li h3 span {
+  color: #8FE1A0;
+}
+
+.lo_content_inner .ev-tagline {
+  color: #fff;
+}
+
+.name .custom:after {
+  color: #8FE1A0;
+}
+
+.time .counter {
+  color: #8FE1A0;
+}
+
+.time .title {
+  color: #8FE1A0;
+}
+
+.ev-countdown .each-countdown-text span {
+  color: #8FE1A0;
+}
+
+.ev-section-title .section-tagline {
+  color: #8FE1A0;
+}
+
+.ev-about .ab-shape {
+  background: #8FE1A0;
+}
+
+.ev-about-2 blockquote {
+  border-left: 6px solid #8FE1A0;
+}
+
+.ev-schedule .ev-sc-date-nav .nav-link span {
+  color: #8FE1A0;
+}
+
+.ev-pricing .price-item .ev-price-list li .check {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.btn.btn-fill.btn-white:hover {
+  background: #2075d5;
+  border-color: #2075d5;
+}
+
+.btn.btn-fill {
+  background-color: #2E82E0;
+}
+
+.btn.btn-fill:active {
+  background: #2E82E0;
+}
+
+.btn.btn-fill:hover {
+  background: #2075d5;
+}
+
+.mh-project-gallery figure figcaption .ev-portfolio-cap-inner .btn {
+  background-color: #2E82E0;
+}
+
+.btn {
+  -webkit-box-shadow: 0 15px 63px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 15px 63px 0 rgba(0, 0, 0, 0.35);
+}
+/*# sourceMappingURL=color.css.map */
